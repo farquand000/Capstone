@@ -1,0 +1,152 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab
+build_property.RootNamespace = Lab
+build_property.ProjectDir = C:\Users\efarq\OneDrive\Desktop\Razor Pages Projects\Lab\Lab\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\efarq\OneDrive\Desktop\Razor Pages Projects\Lab\Lab
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Login/CreateHashedLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cQ3JlYXRlSGFzaGVkTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Login/HashedLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cSGFzaGVkTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Login/LandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTGFuZGluZ1BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/Accept.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcQWNjZXB0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/AddProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcQWRkUHJvamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/editProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcZWRpdFByb2plY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/MyProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcTXlQcm9qZWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/projectsearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNccHJvamVjdHNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/Reject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcUmVqZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/RequestJoin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcUmVxdWVzdEpvaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/ViewProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcVmlld1Byb2plY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/ViewRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcVmlld1JlcXVlc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Projects/ViewUserRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcVmlld1VzZXJSZXF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Search/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Search/ViewSkills.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoXFZpZXdTa2lsbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Teams/AddTeams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcQWRkVGVhbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Teams/EditTeams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcRWRpdFRlYW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Teams/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Teams/JoinTeams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcSm9pblRlYW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Teams/ViewTeams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcVmlld1RlYW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Users/AddSkills.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRkU2tpbGxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Users/AddUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRkVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Users/EditUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdFVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Users/EditUserSkills.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdFVzZXJTa2lsbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Users/ViewProfiles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVmlld1Byb2ZpbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/efarq/OneDrive/Desktop/Razor Pages Projects/Lab/Lab/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-226qrxtvww
