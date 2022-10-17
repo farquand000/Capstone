@@ -1,0 +1,74 @@
+﻿@page
+@using System.Data.SqlClient
+@using Lab.Pages.DB
+@model Lab.Pages.Users.ViewProfilesModel
+@{
+    ViewData["Title"] = @Model.UserToView.firstName + "'s Profile";
+}
+
+<h2 class="h2">User Info:</h2>
+<table class="table table-bordered table-resposnive table triped table-hover">
+    <thead class="table-dark">
+        <tr>
+            @*<th class="">User ID:</th>*@
+            <th class="">First Name:</th>
+            <th class="">Second Name:</th>
+            <th class="">Email:</th>
+            <th class="">User Type:</th>
+            <th class="">Professional Company:</th>
+            <th class="">Professional Email:</th>
+            <th class="">Faculty Association:</th>
+
+        </tr>
+    </thead>
+    <tbody>
+                <tr>
+                    @*<td>@Model.UserToView.userID</td>*@
+                    <td>@Model.UserToView.firstName</td>
+                    <td>@Model.UserToView.secondName</td>
+                    <td>@Model.UserToView.email</td>
+                    <td>@Model.UserToView.userType</td>
+                    <td>@Model.UserToView.professionalCompany</td>
+                    <td>@Model.UserToView.professionalEmail</td>
+                    <td>@Model.UserToView.facultyAssociation</td>         
+
+
+                </tr>
+    </tbody>
+
+</table>
+
+<h2 class="h2">User Skills:</h2>
+<table class="table table-bordered table-resposnive table triped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th class="">Skill:</th>
+            <th class="">Skill Level:</th>
+            <th class="">Edit:</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach(var prod in Model.SkillList)
+            {
+                <tr>
+                    <td>@prod.skill</td>
+                    <td>@prod.skillLevel</td>
+                    <td>
+                        <a asp-page="EditUserSkills" class="btn btn-primary" asp-route-skill="@prod.skill">Edit</a>
+                    </td>
+                </tr>
+            }
+          
+        }
+    </tbody>
+
+
+</table>
+
+<br />
+<a class="btn btn-primary" asp-page="AddSkills" asp-route-userid="@HttpContext.Session.GetInt32("userid")">Add a new Skill -></a>
+
+
+
+

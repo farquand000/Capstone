@@ -1,0 +1,32 @@
+﻿@page
+@model Lab.Pages.Users.EditUsersModel
+@{
+    ViewData["Title"] = "Edit Users";
+}
+
+<form asp-page="Edit">
+    <input type="hidden" asp-for="@Model.UserToUpdate.userID" />
+    <label asp-for="@Model.UserToUpdate.firstName">First Name</label>
+    <input type="text" asp-for="@Model.UserToUpdate.firstName" />
+    <br />
+    <label asp-for="@Model.UserToUpdate.secondName">Second Name</label>
+    <input type="text" asp-for="@Model.UserToUpdate.secondName" />
+    <br />
+    <label asp-for="@Model.UserToUpdate.email">Email</label>
+    <input type="text" asp-for="@Model.UserToUpdate.email" />
+    <br />
+    <label asp-for="@Model.UserToUpdate.userType">User Type</label>
+    <input type="text" asp-for="@Model.UserToUpdate.userType" />
+    <br />
+    <label asp-for="@Model.UserToUpdate.professionalCompany">Professional Company</label>
+    <input type="text" asp-for="@Model.UserToUpdate.professionalCompany" />
+    <br />
+    <label asp-for="@Model.UserToUpdate.professionalEmail">Professional Email</label>
+    <input type="text" asp-for="@Model.UserToUpdate.professionalEmail" />
+    <br />
+    <label asp-for="@Model.UserToUpdate.facultyAssociation">Faculty Association</label>
+    <input type="text" asp-for="@Model.UserToUpdate.facultyAssociation" />
+    <br />
+    <input type="submit" class="btn btn-success" asp-page="EditUsers" />
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
