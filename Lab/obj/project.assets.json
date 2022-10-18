@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\efarq\\.nuget\\packages\\": {}
+    "C:\\Users\\bensw\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\efarq\\OneDrive\\Desktop\\Razor Pages Projects\\Lab\\Lab\\Lab.csproj",
+      "projectUniqueName": "C:\\Users\\bensw\\Source\\Repos\\Capstone\\Lab\\Lab.csproj",
       "projectName": "Lab",
-      "projectPath": "C:\\Users\\efarq\\OneDrive\\Desktop\\Razor Pages Projects\\Lab\\Lab\\Lab.csproj",
-      "packagesPath": "C:\\Users\\efarq\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\efarq\\OneDrive\\Desktop\\Razor Pages Projects\\Lab\\Lab\\obj\\",
+      "projectPath": "C:\\Users\\bensw\\Source\\Repos\\Capstone\\Lab\\Lab.csproj",
+      "packagesPath": "C:\\Users\\bensw\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bensw\\Source\\Repos\\Capstone\\Lab\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\efarq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bensw\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

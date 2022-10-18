@@ -8,6 +8,8 @@ namespace Lab.Pages.Projects
 {
     public class projectsearchModel : PageModel
     {
+        [BindProperty]
+        public string SearchString { get; set; }
 
         [BindProperty]
         public List<Project> ProjectSearchList { get; set; }
@@ -16,9 +18,14 @@ namespace Lab.Pages.Projects
         {
             ProjectSearchList= new List<Project>();
         }
-        public void OnGet(string searchstring)
+        public void OnGet()
         {
-            string sqlQuery = "Select * from Project WHERE projectName like '%" + searchstring + "%'";
+
+        }
+
+        public IActionResult OnPost()
+        {
+            string sqlQuery = "Select * from Project WHERE projectName like '%" + SearchString + "%'";
             SqlDataReader projectsearch = DBClass.GeneralReaderQuery(sqlQuery);
 
             while (projectsearch.Read())
@@ -38,7 +45,7 @@ namespace Lab.Pages.Projects
             }
             projectsearch.Close();
 
-
+            return Page();
         }
     }
 }
