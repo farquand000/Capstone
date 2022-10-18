@@ -14,9 +14,18 @@ namespace EmptyCoreAppTest.Pages.Users
         public UserSkill NewSkill { get; set; }
 
         [BindProperty]
+        public string skill { get; set; }
+
+        [BindProperty]
+        public string skillLevel { get; set; }
+
+        [BindProperty]
         public int userID { get; set; }
-        public IActionResult OnGet()
+
+        
+        public IActionResult OnGet(string userid)
         {
+
             if (HttpContext.Session.GetString("username") == null)
             {
                 return RedirectToPage("/Login/HashedLogin");
@@ -27,35 +36,34 @@ namespace EmptyCoreAppTest.Pages.Users
 
         public IActionResult OnPost()
         {
-            NewSkill.userID = (int)HttpContext.Session.GetInt32("userid");
-            DBClass.InsertSkill(NewSkill);
+            DBClass.InsertSkill(skill,skillLevel,userID);
 
-            return RedirectToPage("Index");
+            return RedirectToPage("ViewProfiles");
         }
 
-        public IActionResult OnPostPopulateHandler()
-        {
+        //public IActionResult OnPostPopulateHandler()
+        //{
 
-            if (!ModelState.IsValid)
-            {
-                ModelState.Clear();
-                NewSkill.skill = "Python";
-                NewSkill.skillLevel = "Intermediate";
+        //    if (!ModelState.IsValid)
+        //    {
+        //        ModelState.Clear();
+        //        NewSkill.skill = "Python";
+        //        NewSkill.skillLevel = "Intermediate";
 
-            }
+        //    }
 
-            return Page();
-        }
-        public IActionResult OnPostClearHandler()
-        {
-            if (ModelState.IsValid)
-            {
-                ModelState.Clear();
-                NewSkill.skill = "";
-                NewSkill.skillLevel = "";
-            }
-            return Page();
+        //    return Page();
+        //}
+        //public IActionResult OnPostClearHandler()
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        ModelState.Clear();
+        //        NewSkill.skill = "";
+        //        NewSkill.skillLevel = "";
+        //    }
+        //    return Page();
 
-        }
+        //}
     }
 }

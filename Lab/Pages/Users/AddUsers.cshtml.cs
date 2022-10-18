@@ -31,44 +31,44 @@ namespace EmptyCoreAppTest.Pages.Users
         }
 
         // populate and clear button
-        public IActionResult OnPostPopulateHandler()
-        {
+        //public IActionResult OnPostPopulateHandler()
+        //{
 
-            if (!ModelState.IsValid)
-            {
-                ModelState.Clear();
+        //    if (!ModelState.IsValid)
+        //    {
+        //        ModelState.Clear();
 
-                NewUser.firstName = "Lebron";
-                NewUser.secondName = "James";
-                NewUser.username = "lebronjames";
-                NewUser.passphrase = "james123";
-                NewUser.email = "theking23@gmail.com";
-                NewUser.userType = "Professional";
-                NewUser.professionalCompany = "Lakers";
-                NewUser.professionalEmail = "celticsownMe@gmail.com";
-                NewUser.facultyAssociation = " ";
+        //        NewUser.firstName = "Lebron";
+        //        NewUser.secondName = "James";
+        //        NewUser.username = "lebronjames";
+        //        NewUser.passphrase = "james123";
+        //        NewUser.email = "theking23@gmail.com";
+        //        NewUser.userType = "Professional";
+        //        NewUser.professionalCompany = "Lakers";
+        //        NewUser.professionalEmail = "celticsownMe@gmail.com";
+        //        NewUser.facultyAssociation = " ";
 
-            }
+        //    }
 
-            return Page();
-        }
+        //    return Page();
+        //}
 
-        public IActionResult OnPostClearHandler()
-        {
-            if (ModelState.IsValid)
-            {
-                ModelState.Clear();
-                NewUser.firstName = "";
-                NewUser.secondName = "";
-                NewUser.username = "";
-                NewUser.passphrase = "";
-                NewUser.email = "";
-                NewUser.userType = "";
-                NewUser.professionalCompany = "";
-                NewUser.professionalEmail = "";
-                NewUser.facultyAssociation = "";
-            }
-            return Page();
-        }
+        //public IActionResult OnPostClearHandler()
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        ModelState.Clear();
+        //        NewUser.firstName = "";
+        //        NewUser.secondName = "";
+        //        NewUser.username = "";
+        //        NewUser.passphrase = "";
+        //        NewUser.email = "";
+        //        NewUser.userType = "";
+        //        NewUser.professionalCompany = "";
+        //        NewUser.professionalEmail = "";
+        //        NewUser.facultyAssociation = "";
+        //    }
+        //    return Page();
+        //}
     }
 }

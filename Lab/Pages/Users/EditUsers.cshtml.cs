@@ -28,10 +28,15 @@ namespace Lab.Pages.Users
                 UserToUpdate.firstName = singleUser["firstName"].ToString();
                 UserToUpdate.secondName = singleUser["secondName"].ToString();
                 UserToUpdate.email = singleUser["email"].ToString();
-                UserToUpdate.userType = singleUser["userType"].ToString();
-                UserToUpdate.professionalCompany = singleUser["professionalCompany"].ToString();
-                UserToUpdate.professionalEmail = singleUser["professionalEmail"].ToString();
-                UserToUpdate.facultyAssociation = singleUser["facultyAssociation"].ToString();
+                UserToUpdate.jmuType = singleUser["jmuType"].ToString();
+                UserToUpdate.interests = singleUser["interests"].ToString();
+                UserToUpdate.experience = singleUser["experience"].ToString();
+                UserToUpdate.gradYear = singleUser["gradYear"].ToString();
+                UserToUpdate.major = singleUser["major"].ToString();
+                UserToUpdate.minor = singleUser["minor"].ToString();
+                UserToUpdate.jobTitle = singleUser["jobTitle"].ToString();
+                UserToUpdate.department = singleUser["department"].ToString();
+                UserToUpdate.moreInfo = singleUser["moreInfo"].ToString();
             }
 
             singleUser.Close();
@@ -48,7 +53,7 @@ namespace Lab.Pages.Users
         {
             DBClass.UpdateUser(UserToUpdate);
 
-            return RedirectToPage("Index");
+            return RedirectToPage("ViewProfiles");
         }
     }
 }

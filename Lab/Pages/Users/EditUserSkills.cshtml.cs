@@ -20,11 +20,12 @@ namespace Lab.Pages.Users
         }
         public IActionResult OnGet(string skill)
         {
+            userID = (int)HttpContext.Session.GetInt32("userid");
+
             if (HttpContext.Session.GetInt32("userid") == null)
             {
                 return RedirectToPage("Index");
             }
-            userID = (int)HttpContext.Session.GetInt32("userid");
             SqlDataReader singleSkill = DBClass.SingleSkillReader(userID, skill);
 
             while (singleSkill.Read())

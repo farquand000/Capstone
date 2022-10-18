@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "497spu1A0se3+mr+W0r0bSX0JbSljuOVM9p4Q0Uua9w=",
+  "Hash": "fHv/VedbIox7DEfpSzHp97I3pGXaLc1v+1OONddC2P8=",
   "Source": "Lab",
   "BasePath": "_content/Lab",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\efarq\\OneDrive\\Desktop\\Razor Pages Projects\\Lab\\Lab\\wwwroot\\Images\\blankpic.png",
+      "SourceId": "Lab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\efarq\\OneDrive\\Desktop\\Razor Pages Projects\\Lab\\Lab\\wwwroot\\",
+      "BasePath": "_content/Lab",
+      "RelativePath": "Images/blankpic.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\blankpic.png"
     },
     {
       "Identity": "C:\\Users\\efarq\\OneDrive\\Desktop\\Razor Pages Projects\\Lab\\Lab\\wwwroot\\js\\site.js",

@@ -7,7 +7,7 @@ namespace Lab.Pages.DB
     public class DBClass
     {
         private static readonly string LabConnStr
-            = @"Server=Localhost;Database=Lab3;Trusted_Connection=True";
+            = @"Server=Localhost;Database=Capstone;Trusted_Connection=True";
 
         private static readonly string AuthConnStr
            = @"Server=Localhost;Database=AUTH;Trusted_Connection=True";
@@ -26,16 +26,38 @@ namespace Lab.Pages.DB
         // method to create users
         public static void InsertUser(User u)
         {
-            string sqlQuery = "INSERT INTO [User] (firstName,secondName,username,email,userType,professionalCompany,professionalEmail,facultyAssociation) VALUES (";
+            string sqlQuery = "INSERT INTO [User] (firstName,secondName,username,email,jmuType,interests,experience,gradYear,major,minor,jobtitle,department,moreInfo) VALUES (";
             sqlQuery += "'" + u.firstName + "',";
             sqlQuery += "'" + u.secondName + "',";
             sqlQuery += "'" + u.username + "',";
             //sqlQuery += "'" + u.passphrase + "',";
             sqlQuery += "'" + u.email + "',";
-            sqlQuery += "'" + u.userType + "',";
-            sqlQuery += "'" + u.professionalCompany + "',";
-            sqlQuery += "'" + u.professionalEmail + "',";
-            sqlQuery += "'" + u.facultyAssociation + "')";
+            sqlQuery += "'" + u.jmuType + "',";
+            sqlQuery += "'" + u.interests + "',";
+            sqlQuery += "'" + u.experience + "',";
+            sqlQuery += "'" + u.gradYear + "',";
+            sqlQuery += "'" + u.major + "',";
+            sqlQuery += "'" + u.minor + "',";
+            sqlQuery += "'" + u.jobTitle + "',";
+            sqlQuery += "'" + u.department + "',";
+            sqlQuery += "'" + u.moreInfo + "')";
+
+            SqlCommand cmdUserRead = new SqlCommand();
+            cmdUserRead.Connection = new SqlConnection();
+            cmdUserRead.Connection.ConnectionString = LabConnStr;
+            cmdUserRead.CommandText = sqlQuery;
+            cmdUserRead.Connection.Open();
+            cmdUserRead.ExecuteNonQuery();
+
+        }
+
+        public static void InsertType(string jmuType, string firstName, string secondName,string username)
+        {
+            string sqlQuery = "INSERT INTO [User] (firstName,secondName,username,jmuType) VALUES (";
+            sqlQuery += "'" + firstName + "',";
+            sqlQuery += "'" + secondName + "',";
+            sqlQuery += "'" + username + "',";
+            sqlQuery += "'" + jmuType + "')";
 
             SqlCommand cmdUserRead = new SqlCommand();
             cmdUserRead.Connection = new SqlConnection();
@@ -57,7 +79,7 @@ namespace Lab.Pages.DB
 
             return (tempReader);
         }
-        // method to update user
+        //method to update user
         public static void UpdateUser(User u)
         {
             string sqlQuery = "UPDATE [User] SET ";
@@ -65,10 +87,15 @@ namespace Lab.Pages.DB
             sqlQuery += "firstName='" + u.firstName + "',";
             sqlQuery += "secondName='" + u.secondName + "',";
             sqlQuery += "email='" + u.email + "',";
-            sqlQuery += "userType='" + u.userType + "',";
-            sqlQuery += "professionalCompany='" + u.professionalCompany + "',";
-            sqlQuery += "professionalEmail='" + u.professionalEmail + "',";
-            sqlQuery += "facultyAssociation='" + u.facultyAssociation + "' WHERE userID=" + u.userID;
+            sqlQuery += "jmuType='" + u.jmuType + "',";
+            sqlQuery += "interests='" + u.interests + "',";
+            sqlQuery += "experience='" + u.experience + "',";
+            sqlQuery += "gradYear='" + u.gradYear + "',";
+            sqlQuery += "major='" + u.major + "',";
+            sqlQuery += "minor='" + u.minor + "',";
+            sqlQuery += "jobTitle='" + u.jobTitle + "',";
+            sqlQuery += "department='" + u.department + "',";
+            sqlQuery += "moreInfo='" + u.moreInfo + "' WHERE userID=" + u.userID;
 
             SqlCommand cmdUserRead = new SqlCommand(sqlQuery);
             cmdUserRead.Connection = new SqlConnection();
@@ -77,7 +104,7 @@ namespace Lab.Pages.DB
             cmdUserRead.Connection.Open();
             cmdUserRead.ExecuteNonQuery();
         }
-        // method to read skills into list
+        //method to read skills into list
         public static SqlDataReader SkillReader()
         {
             SqlCommand cmdSkillRead = new SqlCommand();
@@ -117,12 +144,12 @@ namespace Lab.Pages.DB
             cmdSkillRead.ExecuteNonQuery();
         }
         // method to insert skills into db
-        public static void InsertSkill(UserSkill u)
+        public static void InsertSkill(string skill,string skillLevel,int userID)
         {
             string sqlQuery = "INSERT INTO UserSkill (userID,skill,skillLevel) VALUES (";
-            sqlQuery += u.userID + ",";
-            sqlQuery += "'" + u.skill + "',";
-            sqlQuery += "'" + u.skillLevel + "')";
+            sqlQuery += userID + ",";
+            sqlQuery += "'" + skill + "',";
+            sqlQuery += "'" + skillLevel + "')";
 
             SqlCommand cmdSkillRead = new SqlCommand();
             cmdSkillRead.Connection = new SqlConnection();

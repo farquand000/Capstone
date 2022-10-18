@@ -13,28 +13,66 @@ namespace Lab.Pages.Users
 
         public List<User_Skill> SkillList { get; set; }
 
+        [BindProperty]
+        public User UserProfile { get; set; }
+       
+        [BindProperty]
+        public string username { get; set; }
+
+        [BindProperty]
+        public int userID { get; set; }
+
         public ViewProfilesModel()
         {
             UserToView = new User_Skill();
             SkillList = new List<User_Skill>();
+            UserProfile = new User();
         }
-        public IActionResult OnGet(int userid)
+        public IActionResult OnGet()
         {
-            SqlDataReader singleprofile = DBClass.SingleProfileReader(userid);
-            SqlDataReader someskills = DBClass.SomeSkills(userid);
-            HttpContext.Session.SetInt32("userid", userid);
+            username = HttpContext.Session.GetString("username");
+            SqlDataReader userReader = DBClass.UserReader(username);
 
-            while (singleprofile.Read())
+            while (userReader.Read())
             {
-                UserToView.userID = userid;
-                UserToView.firstName = singleprofile["firstName"].ToString();
-                UserToView.secondName = singleprofile["secondName"].ToString();
-                UserToView.email = singleprofile["email"].ToString();
-                UserToView.userType = singleprofile["userType"].ToString();
-                UserToView.professionalCompany = singleprofile["professionalCompany"].ToString();
-                UserToView.professionalEmail = singleprofile["professionalEmail"].ToString();
-                UserToView.facultyAssociation = singleprofile["facultyAssociation"].ToString();
+                UserProfile.userID = Int32.Parse(userReader["userID"].ToString());
+                UserProfile.firstName = userReader["firstName"].ToString();
+                UserProfile.secondName = userReader["secondName"].ToString();
+                UserProfile.email = userReader["email"].ToString();
+                UserProfile.jmuType = userReader["jmuType"].ToString();
+                UserProfile.interests = userReader["interests"].ToString();
+                UserProfile.experience = userReader["experience"].ToString();
+                UserProfile.gradYear = userReader["gradYear"].ToString();
+                UserProfile.major = userReader["major"].ToString();
+                UserProfile.minor = userReader["minor"].ToString();
+                UserProfile.jobTitle = userReader["jobTitle"].ToString();
+                UserProfile.department = userReader["department"].ToString();
+                UserProfile.moreInfo = userReader["moreInfo"].ToString();
+
+
             }
+            userReader.Close();
+            //SqlDataReader singleprofile = DBClass.SingleProfileReader(userid);
+            HttpContext.Session.SetInt32("userid", userID);
+            SqlDataReader someskills = DBClass.SomeSkills(UserProfile.userID);
+
+            //while (singleprofile.Read())
+            //{
+            //    UserToView.userID = userid;
+            //    UserToView.firstName = singleprofile["firstName"].ToString();
+            //    UserToView.secondName = singleprofile["secondName"].ToString();
+            //    UserToView.email = singleprofile["email"].ToString();
+            //    UserToView.jmuType = singleprofile["jmuType"].ToString();
+            //    UserToView.interests = singleprofile["interests"].ToString();
+            //    UserToView.experience = singleprofile["experience"].ToString();
+            //    UserToView.gradYear = singleprofile["gradYear"].ToString();
+            //    UserToView.major = singleprofile["major"].ToString();
+            //    UserToView.minor = singleprofile["minor"].ToString();
+            //    UserToView.jobTitle = singleprofile["jobTitle"].ToString();
+            //    UserToView.department = singleprofile["department"].ToString();
+            //    UserToView.moreInfo = singleprofile["moreInfo"].ToString();
+
+            //}
 
             while (someskills.Read())
             {
@@ -48,7 +86,7 @@ namespace Lab.Pages.Users
                 });
 
             }
-            singleprofile.Close();
+            someskills.Close();
 
             if (HttpContext.Session.GetString("username") == null)
             {
