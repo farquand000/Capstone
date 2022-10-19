@@ -4,11 +4,39 @@
     ViewData["Title"] = "Teams";
 }
 
+
+@*<h2 class="h2">Teams</h2>
+@{
+    foreach (var team in Model.TeamList)
+    {
+        <br />
+    <div class="col-md-14">
+        <div class="card mb-4 mb-md-0">
+            <div class="card-body">
+                <h5 class="mb-4">
+                    <span class="text-dark font-italic me-1">@team.teamName</span>
+                </h5>
+                <hr>
+                <p>@team.teamDescription</p>
+                <p>@team.teamEmailAddress</p>
+
+            </div>
+        </div>
+    </div>
+}
+}*@
+
+
+
+
+
+
+
+
 <h2 class="h2">Team List</h2>
 <table class="table table-bordered table-striped table-hover table-responsive">
     <thead>
         <tr>
-           @* <th>Team ID</th>*@
             <th>Team Name</th>
             <th>Team Description</th>
             <th>Team Email Address</th>
@@ -20,18 +48,18 @@
         @{
             foreach (var prod in Model.TeamList)
             {
-                <tr>
-                
-                    <td>@prod.teamName</td>
-                    <td>@prod.teamDescription</td>
-                    <td>@prod.teamEmailAddress</td>
-                    <td>
-                        <a asp-page="ViewTeams" class="btn btn-primary" asp-route-teamid="@prod.teamID">View Profile</a>
-                    </td>                  
-                    <td>
-                    <a asp-page="EditTeams" class="btn btn-primary" asp-route-teamid="@prod.teamID">Edit</a>
-                    </td>
-                </tr>
+                        <tr>
+                        
+                            <td>@prod.teamName</td>
+                            <td>@prod.teamDescription</td>
+                            <td>@prod.teamEmailAddress</td>
+                            <td>
+                                <a asp-page="ViewTeams" class="btn btn-primary" asp-route-teamid="@prod.teamID">View Profile</a>
+                            </td>                  
+                            <td>
+                            <a asp-page="EditTeams" class="btn btn-primary" asp-route-teamid="@prod.teamID">Edit</a>
+                            </td>
+                        </tr>
             }
         }
     </tbody>

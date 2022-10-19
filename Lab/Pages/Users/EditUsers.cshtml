@@ -11,15 +11,19 @@
         <form asp-page="Edit">
             <input type="hidden" asp-for="@Model.UserToUpdate.userID" />
         <label asp-for="@Model.UserToUpdate.firstName">First Name</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.firstName" />
         <br />
         <label asp-for="@Model.UserToUpdate.secondName">Second Name</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.secondName" />
         <br />
         <label asp-for="@Model.UserToUpdate.email">Email</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.email" />
         <br />
         <label asp-for="@Model.UserToUpdate.jmuType">User Type</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.jmuType" />
         <br />
         <div class="form-group">
@@ -33,15 +37,19 @@
         </div>
         <br />
         <label asp-for="@Model.UserToUpdate.gradYear">Graduation Year</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.gradYear" />
         <br />
         <label asp-for="@Model.UserToUpdate.major">Major</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.major" />
         <br />
         <label asp-for="@Model.UserToUpdate.minor">Minor</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.minor" />
         <br />
         <label asp-for="@Model.UserToUpdate.moreInfo">More Info (Link)</label>
+        <br />
         <input type="text" asp-for="@Model.UserToUpdate.moreInfo" />
         <br />
         <input type="submit" class="btn btn-success" asp-page="EditUsers" />
