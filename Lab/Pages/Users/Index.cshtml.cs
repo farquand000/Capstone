@@ -30,10 +30,16 @@ namespace Lab.Pages.Users
                     firstName = userReader["firstName"].ToString(),
                     secondName = userReader["secondName"].ToString(),
                     email = userReader["email"].ToString(),
-                    userType = userReader["userType"].ToString(),
-                    professionalCompany = userReader["professionalCompany"].ToString(),
-                    professionalEmail = userReader["professionalEmail"].ToString(),
-                    facultyAssociation = userReader["facultyAssociation"].ToString()
+                    jmuType = userReader["jmuType"].ToString(),
+                    interests = userReader["interests"].ToString(),
+                    experience = userReader["experience"].ToString(),
+                    gradYear = userReader["gradYear"].ToString(),
+                    major = userReader["gradYear"].ToString(),
+                    minor = userReader["minor"].ToString(),
+                    jobTitle = userReader["jobTitle"].ToString(),
+                    department = userReader["department"].ToString(),
+                    moreInfo = userReader["moreInfo"].ToString(),
+
 
                 });
             }

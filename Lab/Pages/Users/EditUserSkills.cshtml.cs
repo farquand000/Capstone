@@ -18,18 +18,19 @@ namespace Lab.Pages.Users
         {
             UserSkillToUpdate = new User_Skill();
         }
-        public IActionResult OnGet(string skill)
+        public IActionResult OnGet(string skill, int userid)
         {
-            if (HttpContext.Session.GetInt32("userid") == null)
+            //userID = (int)HttpContext.Session.GetInt32("userid");
+
+            if (userid == null)
             {
                 return RedirectToPage("Index");
             }
-            userID = (int)HttpContext.Session.GetInt32("userid");
-            SqlDataReader singleSkill = DBClass.SingleSkillReader(userID, skill);
+            SqlDataReader singleSkill = DBClass.SingleSkillReader(userid, skill);
 
             while (singleSkill.Read())
             {
-                UserSkillToUpdate.userID = userID;
+                UserSkillToUpdate.userID = userid;
                 UserSkillToUpdate.skill = singleSkill["skill"].ToString();
                 UserSkillToUpdate.skillLevel = singleSkill["skillLevel"].ToString();
 

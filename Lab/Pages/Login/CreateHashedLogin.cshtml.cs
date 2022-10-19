@@ -11,6 +11,15 @@ namespace Lab.Pages.Login
         public string username { get; set; }
         [BindProperty]
         public string passphrase { get; set; }
+
+        [BindProperty]
+        public string jmuType { get; set; }
+
+        [BindProperty]
+        public string firstName { get; set; }
+
+        [BindProperty]
+        public string secondName { get; set; }
         public void OnGet()
         {
         }
@@ -21,6 +30,7 @@ namespace Lab.Pages.Login
             // then...
 
             DBClass.CreateHashedUser(username, passphrase);
+            DBClass.InsertType(jmuType,firstName,secondName,username);
 
             // Perform actual logic to check if user was successfully
             //  added in your projects but for demo purposes we can say:
